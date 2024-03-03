@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Link for PT Sans font -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+<!-- Link for Open Sans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75,300&display=swap" rel="stylesheet">
+    <!-- Link for Slick slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>Layout 3</title>
+</head>
+<body>
+<div class="page">
+<!--Header-->
+    <header class="header">
+        <div class="wrapper container">
+            <!--Block with logo and company name-->
+            <div class="logo">
+                <div class="logo__icon">
+                    <a class="logo__icon__link" href="#">
+                        <img class="logo__icon__image" src="img/icon1.jpg" alt="Logo">
+                    </a>
+                </div>
+                <div class="logo__text">
+                    <h1 class="logo__text__title">Назва<br>компанії</h1>
+                    <h2 class="logo__text__subtitle">Найкраща компанія</h2>
+                </div>
+            </div>
+            <!--Block with phone numbers and link to feedback form-->
+            <div class="contacts">
+                <div class="contacts__phone-numbers">
+                    <a href="tel:380666666666">+38(066)666-66-66</a> <br>
+                    <a href="tel:380999999999">+38(099)999-99-99</a>
+                </div>
+                <div class="contacts__feedback">
+                    <button id="feedback-btn">Зворотній зв'язок</button>
+                    <div id="feedback-form">
+                        <button id="close-btn">
+                            <span class="cross"></span>
+                        </button>
+                      <h2>Зворотній зв'язок</h2>
+                      <form action="" name="feedback" id="form">
+                        <label for="firstname">Ваше ім'я *</label>
+                        <input type="text" name="firstname" id="firstname"/>
+                        <label for="phone"> Телефон *</label>
+                        <input type="tel" name="phone" id="phone"/>
+                        <div id="phone-error" style="color: red;"></div>
+                        <label for="email">Email *</label>
+                        <input type="email" name="email" id="email"/>
+                        <label for="message">Повідомлення</label>
+                        <textarea id="message" name="message"></textarea><br><br>
+                        <button type="submit" class="submit">Надіслати</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<main>
+    <!-- Menu -->
+    <nav>
+        <div class="wrapper menu-container">
+        <div class="burger-menu">
+            <div class="burger-menu__burger"></div>
+            <div class="burger-menu__burger"></div>
+            <div class="burger-menu__burger"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка і оплата</a></li>
+            <li><a href="#">Прайс-ліст</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+        </div>
+    </nav>
+<!-- Slider -->
+    <div class="slider">
+        <div class="slider__item">
+            <img src="img/1.png" alt="slide1" class="slide_image">
+        </div>
+        <div class="slider__item">
+            <img src="img/2.png" alt="slide2" class="slide_image">
+        </div>
+    </div>
+<!-- Content -->
+    <div class="content">
+        <div class="wrapper">
+        <!-- Breadcrumbs-->
+        <div class="content__breadcrumbs">
+            <a href="#" class="breadcrumbs__link">Головна</a> /
+            <a href="#" class="breadcrumbs__link">Каталог</a> /
+            <a href="#">Побутова техніка</a>
+        </div>
+        <div class="content__main">
+        <!-- Leftblock -->
+            <aside class="content__leftblock">
+        <!-- Catalog -->
+                <ul class="catalog">
+                    <li class="catalog__list"> <span>Автомобілі</span>
+                        <ul class="catalog__sublist">
+                            <li><span>Toyota</span></li>
+                            <li><span>BMW</span></li>
+                            <li><span>Ford</span></li>
+                            <li><span>Mercedes-Benz</span></li>
+                        </ul>
+                    </li>
+                    <li class="catalog__list"> <span>Побутова техніка</span>
+                        <ul class="catalog__sublist">
+                            <li><span>Мікрохвильовки</span></li>
+                            <li><span>Холодильники</span></li>
+                            <li><span>Посудомийні машини</span></li>
+                            <li><span>Чайники</span></li>
+                        </ul>
+                    </li>
+                    <li class="catalog__list"> <span>Мобільна техніка</span>
+                        <ul class="catalog__sublist">
+                            <li><span>Смартфони</span></li>
+                            <li><span>Планшети</span></li>
+                            <li><span>Смарт-годинники</span></li>
+                        </ul>
+                    </li>
+                    <li class="catalog__list"> <span>Комп'ютери</span>
+                        <ul class="catalog__sublist">
+                            <li><span>Монітори</span></li>
+                            <li><span>Системні блоки</span></li>
+                            <li><span>Клавіатури</span></li>
+                            <li><span>Комп'ютерні миші</span></li>
+                        </ul>
+                    </li>
+                    <li class="catalog__list"> <span>Одяг</span>
+                        <ul class="catalog__sublist">
+                            <li><span>Чоловічий одяг</span></li>
+                            <li><span>Жіночий одяг</span></li>
+                            <li><span>Дитячий одяг</span></li>
+                        </ul>
+                    </li>
+                    <li class="catalog__list"> <span>Нерухомість</span>
+                        <ul class="catalog__sublist">
+                            <li><span>Приватні будинки</span></li>
+                            <li><span>Квартири</span></li>
+                            <li><span>Гаражі</span></li>
+                        </ul>
+                    </li>
+                </ul>
+        <!-- Price-list block -->
+                <div class="price-list">
+                    <a href="#">
+                    <img src="img/price_list.png" alt="Price List">
+                    <p>Прайс-ліст</p>
+                    </a>
+                </div>
+            </aside>
+        <!-- Centerblock -->
+            <div class="content__centerblock">
+                <div class="centerblock__items">
+                    <div class="content__centerblock__item">
+                        <img src="img/item_photo.png" alt="Item photo" class="item-photo">
+                        <a href="#" class="link-title">Найкрутіший чайник, який життєво-необхідно купити!</a>
+                        <div class="container1">
+                            <p>750 грн.</p>
+                            <a href="#" class="link__cart-icon">
+                                <img src="img/shoping_cart.png" alt="Cart icon" class="cart-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content__centerblock__item">
+                        <img src="img/item_photo.png" alt="Item photo" class="item-photo">
+                        <a href="#" class="link-title">Найкрутіший чайник, який життєво-необхідно купити!</a>
+                        <div class="container1">
+                            <p>750 грн.</p>
+                            <a href="#" class="link__cart-icon">
+                                <img src="img/shoping_cart.png" alt="Cart icon" class="cart-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content__centerblock__item">
+                        <img src="img/item_photo.png" alt="Item photo" class="item-photo">
+                        <a href="#" class="link-title">Найкрутіший чайник, який життєво-необхідно купити!</a>
+                        <div class="container1">
+                            <p>750 грн.</p>
+                            <a href="#" class="link__cart-icon">
+                                <img src="img/shoping_cart.png" alt="Cart icon" class="cart-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content__centerblock__item">
+                        <img src="img/item_photo.png" alt="Item photo" class="item-photo">
+                        <a href="#" class="link-title">Найкрутіший чайник, який життєво-необхідно купити!</a>
+                        <div class="container1">
+                            <p>750 грн.</p>
+                            <a href="#" class="link__cart-icon">
+                                <img src="img/shoping_cart.png" alt="Cart icon" class="cart-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content__centerblock__item">
+                        <img src="img/item_photo.png" alt="Item photo" class="item-photo">
+                        <a href="#" class="link-title">Найкрутіший чайник, який життєво-необхідно купити!</a>
+                        <div class="container1">
+                            <p>750 грн.</p>
+                            <a href="#" class="link__cart-icon">
+                                <img src="img/shoping_cart.png" alt="Cart icon" class="cart-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        <!-- String with number of pages -->        
+                <div class="centerblock__pages">
+                    <p>
+                        <span>1</span> 
+                        <span>2</span> 
+                        <span>3</span> 
+                        <span>4</span> 
+                        <span>5</span> 
+                        <span>6</span>
+                    </p>
+                </div>
+        <!-- Text after -->        
+                <div class="centerblock__text">
+                    <p>
+                        Компанія "Піксель Плюс" існує понад 6 років, за цей час ми брали участь у розробці більш ніж 700 сайтів, тому можемо впевнено називати себе професіоналами. На даний момент наш колектив складається з більш ніж 30 співробітників, які працюють у двох офісах у Москві та Зеленограді.характерні для цього жанру мотиви: нерозділеного кохання, відходу молодості, згасання душі.
+                    </p>
+                    <p>
+                        Одним з основних напрямків робіт нашої компанії є пошукове просування сайтів, на даний момент ми працюємо з більш ніж 150 постійними клієнтами по більш ніж 11 000 пошукових запитах. При цьому в роботі основний акцент ми робимо на якості робіт, а так само застосовуємо власні унікальні розробки в області SEO просування. На даний момент відділ SEO складається з 9 осіб під керівництвом провідного фахівця, які переважно працюють в нашому московському офісі.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Footer -->
+<footer>
+    <div class="footer__container wrapper">
+        <div class="footer__info1">© 2012–2013 ЗАО «Компанія»
+            <a href="mailto:info@name.ua">info@name.ua</a></div>
+        <div class="footer__menu">
+            <a href="#">Головна</a>
+            <a href="#">Каталог</a>
+            <a href="#">Доставка і оплата</a>
+            <a href="#">Прайс-ліст</a>
+            <a href="#">Контакти</a>
+        </div>
+        <div class="footer__info2">
+            <img src="img/footer_logo.png" alt="Footer logo">
+            <p>
+                <span> Розробка сайту</span>— <br>
+                компанія «Піксель Плюс»
+            </p>
+        </div>
+    </div>
+</footer>
+</div>
+<!-- JS links -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script src="js/form-validation.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
